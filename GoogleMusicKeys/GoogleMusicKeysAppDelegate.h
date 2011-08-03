@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "GoogleMusicController.h"
+#import "MAAttachedWindow.h"
 
 @interface GoogleMusicKeysAppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
@@ -26,17 +27,19 @@
 	CFMachPortRef eventTap;
     
     GoogleMusicController *controller;
+    
+    MAAttachedWindow *attachedWindow;
+    IBOutlet NSView *view;
+    IBOutlet NSTextField *textField;
 }
 
-- (IBAction)showGrooveshark:(id)sender;
+- (IBAction)showGoogleMusic:(id)sender;
 - (IBAction)openPreferencesWindow:(id)sender;
 - (IBAction)startAtLogin:(id)sender;
 - (IBAction)mediaKeys:(id)sender;
 - (IBAction)globalKeys:(id)sender;
-- (IBAction)openLink:(id)sender;
+- (IBAction)showAbout:(id)sender;
 - (void)registerHotKeys:(BOOL)registerKeys;
-- (void)printToAPIFile:(NSString *)withAction;
 - (CGEventRef) processEvent:(CGEventRef)event withType:(CGEventType)type;
-- (void)handleURLEvent:(NSAppleEventDescriptor*)event withReplyEvent:(NSAppleEventDescriptor*)replyEvent;
-
+- (void) showMesage:(NSString *) message;
 @end

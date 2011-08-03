@@ -18,6 +18,7 @@
 
 
 @implementation GoogleMusicController
+@synthesize error;
 
 - (id)init
 {
@@ -31,6 +32,10 @@
 
 -(BOOL) executeInSafari:(NSString *) command {
     SafariApplication *safari = [SBApplication applicationWithBundleIdentifier:@"com.apple.safari"];
+    if(![safari isRunning]) {
+        return NO;
+    }
+    
     for(SafariWindow *window in safari.windows) {
         for (SafariTab *tab in window.tabs) {
             //NSLog(@"%@ ::: %@", tab.name, tab.text);
@@ -45,6 +50,10 @@
 
 -(BOOL) executeInChrome:(NSString *) command {
     ChromeApplication *chrome = [SBApplication applicationWithBundleIdentifier:@"com.google.Chrome"];
+    
+    if(![chrome isRunning]) {
+        return NO;
+    }
     
     for(ChromeWindow *window in chrome.windows) {
         for (ChromeTab *tab in window.tabs) {
@@ -68,7 +77,7 @@
 -(void) tryChromeThenSafari:(NSString *)command {
     if(![self executeInChrome:command]) {
         if(![self executeInSafari:command]){
-            NSLog(@"Music Beta was not found to be playing in either Chrome or Safari");
+            self.error(@"Music Beta was not found to be playing in either Chrome or Safari");
         }
     }
 }
@@ -89,6 +98,9 @@
     [self tryChromeThenSafari:SHUFFLE_COMMAND];
 }
 
+-(void) show {
+	
+}
     
 
 @end
