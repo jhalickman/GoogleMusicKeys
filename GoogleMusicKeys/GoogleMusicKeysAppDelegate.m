@@ -167,8 +167,16 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
 	[NSBundle loadNibNamed:@"PreferencePane" owner:self];
 }
 
+
 - (IBAction)showAbout:(id)sender {
 	[mi_firstLaunch makeKeyAndOrderFront:self];
+}
+
+- (IBAction)openLink:(id)sender {
+	[mi_firstLaunch close];
+	NSURL *moreInfoURL = [[NSURL alloc] initWithString:@"http://halickman.com/googlemusickeys"];
+	[[NSWorkspace sharedWorkspace] openURL:[moreInfoURL absoluteURL]];
+	[moreInfoURL release];
 }
 
 -(void) showMesage:(NSString *) message {
