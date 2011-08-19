@@ -213,7 +213,10 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
     
     controller = [[GoogleMusicController alloc] init];
     controller.error = ^(NSString *message) {
-        [self showMesage:message];
+		NSAlert *alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
+		[alert runModal];
+		//[self showMesage:message];
+		//[self performSelectorOnMainThread:@selector(showMesage:) withObject:message waitUntilDone:YES];
     };
     
 	bundlePath = [[NSBundle mainBundle] bundlePath];

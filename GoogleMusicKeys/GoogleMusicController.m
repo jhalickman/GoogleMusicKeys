@@ -66,6 +66,46 @@
     return NO;
 }
 
+-(BOOL) showInSafari {
+    SafariApplication *safari = [SBApplication applicationWithBundleIdentifier:@"com.apple.safari"];
+    if(![safari isRunning]) {
+        return NO;
+    }
+    
+    for(SafariWindow *window in safari.windows) {
+        for (SafariTab *tab in window.tabs) {
+            //NSLog(@"%@ ::: %@", tab.name, tab.text);
+            if([tab.name hasSuffix:@"Music Beta"]) {
+				[safari activate];
+				[window setCurrentTab:tab];
+                return YES;
+            }
+        }
+    }
+    return NO;
+}
+
+-(BOOL) showInChrome {
+    ChromeApplication *chrome = [SBApplication applicationWithBundleIdentifier:@"com.google.Chrome"];
+    
+    if(![chrome isRunning]) {
+        return NO;
+    }
+    
+    for(ChromeWindow *window in chrome.windows) {
+		int i = 1;
+        for (ChromeTab *tab in window.tabs) {
+            if([tab.title hasSuffix:@"Music Beta"]) {
+                [chrome activate];
+				[window setActiveTabIndex:i];
+                return YES;
+            }
+			i++;
+        }
+    }
+    return NO;
+}
+
 /*-(BOOL) executeInFirefox:(NSString *)command {
     FireFoxApplication *firefox = [SBApplication applicationWithBundleIdentifier:@"org.mozilla.firefox"];
     
@@ -99,7 +139,11 @@
 }
 
 -(void) show {
-    
+    if(![self showInChrome]) {
+        if(![self showInSafari]){
+            self.error(@"Music Beta was not found to be playing in either Chrome or Safari");
+        }
+    }
 }
 
     
