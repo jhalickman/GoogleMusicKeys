@@ -21,7 +21,7 @@
     </object>
     <object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
       <bool key="EncodedWithXMLCoder">YES</bool>
-      <integer value="20"/>
+      <integer value="145"/>
     </object>
     <object class="NSArray" key="IBDocument.PluginDependencies">
       <bool key="EncodedWithXMLCoder">YES</bool>
@@ -53,7 +53,7 @@
         <int key="NSWindowBacking">2</int>
         <string key="NSWindowRect">{{596, 450}, {404, 191}}</string>
         <int key="NSWTFlags">611844096</int>
-        <string key="NSWindowTitle">GSDesktopHelper Preferences</string>
+        <string key="NSWindowTitle">Google Music Keys Preferences</string>
         <string key="NSWindowClass">NSPanel</string>
         <nil key="NSViewClass"/>
         <nil key="NSUserInterfaceItemIdentifier"/>
@@ -73,10 +73,9 @@
                 <object class="NSTabViewItem" id="981604282">
                   <string key="NSIdentifier">1</string>
                   <object class="NSView" key="NSView" id="609290874">
-                    <reference key="NSNextResponder" ref="182655983"/>
+                    <nil key="NSNextResponder"/>
                     <int key="NSvFlags">256</int>
                     <string key="NSFrame">{{10, 33}, {358, 129}}</string>
-                    <reference key="NSSuperview" ref="182655983"/>
                   </object>
                   <string key="NSLabel">Google Music Keys</string>
                   <object class="NSColor" key="NSColor" id="23515534">
@@ -93,7 +92,7 @@
                 <object class="NSTabViewItem" id="1033231766">
                   <string key="NSIdentifier">Item 1</string>
                   <object class="NSView" key="NSView" id="746037339">
-                    <nil key="NSNextResponder"/>
+                    <reference key="NSNextResponder" ref="182655983"/>
                     <int key="NSvFlags">256</int>
                     <object class="NSMutableArray" key="NSSubviews">
                       <bool key="EncodedWithXMLCoder">YES</bool>
@@ -259,20 +258,21 @@
                       </object>
                     </object>
                     <string key="NSFrame">{{10, 33}, {358, 129}}</string>
+                    <reference key="NSSuperview" ref="182655983"/>
                   </object>
                   <string key="NSLabel">Global Hotkeys</string>
                   <reference key="NSColor" ref="23515534"/>
                   <reference key="NSTabView" ref="182655983"/>
                 </object>
               </object>
-              <reference key="NSSelectedTabViewItem" ref="981604282"/>
+              <reference key="NSSelectedTabViewItem" ref="1033231766"/>
               <reference key="NSFont" ref="799537902"/>
               <int key="NSTvFlags">0</int>
               <bool key="NSAllowTruncatedLabels">YES</bool>
               <bool key="NSDrawsBackground">YES</bool>
               <object class="NSMutableArray" key="NSSubviews">
                 <bool key="EncodedWithXMLCoder">YES</bool>
-                <reference ref="609290874"/>
+                <reference ref="746037339"/>
               </object>
             </object>
           </object>
@@ -300,70 +300,6 @@
             <reference key="destination" ref="250476143"/>
           </object>
           <int key="connectionID">116</int>
-        </object>
-        <object class="IBConnectionRecord">
-          <object class="IBBindingConnection" key="connection">
-            <string key="label">shortcut: values.PlayPauseKey</string>
-            <reference key="source" ref="1044494731"/>
-            <reference key="destination" ref="256493859"/>
-            <object class="NSNibBindingConnector" key="connector">
-              <reference key="NSSource" ref="1044494731"/>
-              <reference key="NSDestination" ref="256493859"/>
-              <string key="NSLabel">shortcut: values.PlayPauseKey</string>
-              <string key="NSBinding">shortcut</string>
-              <string key="NSKeyPath">values.PlayPauseKey</string>
-              <int key="NSNibBindingConnectorVersion">2</int>
-            </object>
-          </object>
-          <int key="connectionID">150</int>
-        </object>
-        <object class="IBConnectionRecord">
-          <object class="IBBindingConnection" key="connection">
-            <string key="label">shortcut: values.NextKey</string>
-            <reference key="source" ref="404526253"/>
-            <reference key="destination" ref="256493859"/>
-            <object class="NSNibBindingConnector" key="connector">
-              <reference key="NSSource" ref="404526253"/>
-              <reference key="NSDestination" ref="256493859"/>
-              <string key="NSLabel">shortcut: values.NextKey</string>
-              <string key="NSBinding">shortcut</string>
-              <string key="NSKeyPath">values.NextKey</string>
-              <int key="NSNibBindingConnectorVersion">2</int>
-            </object>
-          </object>
-          <int key="connectionID">177</int>
-        </object>
-        <object class="IBConnectionRecord">
-          <object class="IBBindingConnection" key="connection">
-            <string key="label">shortcut: values.PreviousKey</string>
-            <reference key="source" ref="655044589"/>
-            <reference key="destination" ref="256493859"/>
-            <object class="NSNibBindingConnector" key="connector">
-              <reference key="NSSource" ref="655044589"/>
-              <reference key="NSDestination" ref="256493859"/>
-              <string key="NSLabel">shortcut: values.PreviousKey</string>
-              <string key="NSBinding">shortcut</string>
-              <string key="NSKeyPath">values.PreviousKey</string>
-              <int key="NSNibBindingConnectorVersion">2</int>
-            </object>
-          </object>
-          <int key="connectionID">178</int>
-        </object>
-        <object class="IBConnectionRecord">
-          <object class="IBBindingConnection" key="connection">
-            <string key="label">shortcut: values.ShuffleKey</string>
-            <reference key="source" ref="11440002"/>
-            <reference key="destination" ref="256493859"/>
-            <object class="NSNibBindingConnector" key="connector">
-              <reference key="NSSource" ref="11440002"/>
-              <reference key="NSDestination" ref="256493859"/>
-              <string key="NSLabel">shortcut: values.ShuffleKey</string>
-              <string key="NSBinding">shortcut</string>
-              <string key="NSKeyPath">values.ShuffleKey</string>
-              <int key="NSNibBindingConnectorVersion">2</int>
-            </object>
-          </object>
-          <int key="connectionID">180</int>
         </object>
       </object>
       <object class="IBMutableOrderedSet" key="objectRecords">
@@ -677,9 +613,9 @@
               <bool key="EncodedWithXMLCoder">YES</bool>
               <string>globalKeys:</string>
               <string>mediaKeys:</string>
-              <string>openLink:</string>
               <string>openPreferencesWindow:</string>
-              <string>showGrooveshark:</string>
+              <string>showAbout:</string>
+              <string>showGoogleMusic:</string>
               <string>startAtLogin:</string>
             </object>
             <object class="NSMutableArray" key="dict.values">
@@ -698,9 +634,9 @@
               <bool key="EncodedWithXMLCoder">YES</bool>
               <string>globalKeys:</string>
               <string>mediaKeys:</string>
-              <string>openLink:</string>
               <string>openPreferencesWindow:</string>
-              <string>showGrooveshark:</string>
+              <string>showAbout:</string>
+              <string>showGoogleMusic:</string>
               <string>startAtLogin:</string>
             </object>
             <object class="NSMutableArray" key="dict.values">
@@ -714,15 +650,15 @@
                 <string key="candidateClassName">id</string>
               </object>
               <object class="IBActionInfo">
-                <string key="name">openLink:</string>
-                <string key="candidateClassName">id</string>
-              </object>
-              <object class="IBActionInfo">
                 <string key="name">openPreferencesWindow:</string>
                 <string key="candidateClassName">id</string>
               </object>
               <object class="IBActionInfo">
-                <string key="name">showGrooveshark:</string>
+                <string key="name">showAbout:</string>
+                <string key="candidateClassName">id</string>
+              </object>
+              <object class="IBActionInfo">
+                <string key="name">showGoogleMusic:</string>
                 <string key="candidateClassName">id</string>
               </object>
               <object class="IBActionInfo">
