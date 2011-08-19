@@ -11,6 +11,7 @@
 		AB5DC93213DFAE190092D43B /* GMKApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC93113DFAE190092D43B /* GMKApplication.m */; };
 		AB81362C13E484B40062D81A /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AB81362B13E484B40062D81A /* MAAttachedWindow.m */; };
 		ABA168D513FE096C0024D2E6 /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA168D413FE096C0024D2E6 /* MenuIcon.png */; };
+		ABA1699C13FE16790024D2E6 /* MenuIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ABA1699B13FE16790024D2E6 /* MenuIcon.icns */; };
 		ABEB0D0513E5197400ADFBE7 /* PreferencePane.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABEB0D0413E5197400ADFBE7 /* PreferencePane.xib */; };
 		ABEB0D1813E51AC600ADFBE7 /* ShortcutRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABEB0D1713E51AC600ADFBE7 /* ShortcutRecorder.framework */; };
 		ABEB0D5C13E51B5500ADFBE7 /* ShortcutRecorder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ABEB0D1713E51AC600ADFBE7 /* ShortcutRecorder.framework */; };
@@ -52,6 +53,7 @@
 		AB81362A13E484B40062D81A /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		AB81362B13E484B40062D81A /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		ABA168D413FE096C0024D2E6 /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon.png; sourceTree = "<group>"; };
+		ABA1699B13FE16790024D2E6 /* MenuIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MenuIcon.icns; sourceTree = "<group>"; };
 		ABEB0D0413E5197400ADFBE7 /* PreferencePane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencePane.xib; sourceTree = "<group>"; };
 		ABEB0D1713E51AC600ADFBE7 /* ShortcutRecorder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShortcutRecorder.framework; sourceTree = "<group>"; };
 		ABF0E47A13DF9DDE00ABF313 /* GoogleMusicKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMusicKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 		ABF0E48513DF9DDE00ABF313 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ABA1699B13FE16790024D2E6 /* MenuIcon.icns */,
 				ABA168D413FE096C0024D2E6 /* MenuIcon.png */,
 				ABF0E48613DF9DDE00ABF313 /* GoogleMusicKeys-Info.plist */,
 				ABF0E48713DF9DDE00ABF313 /* InfoPlist.strings */,
@@ -238,6 +241,7 @@
 				ABF0E4AE13DFA72F00ABF313 /* MainMenu.xib in Resources */,
 				ABEB0D0513E5197400ADFBE7 /* PreferencePane.xib in Resources */,
 				ABA168D513FE096C0024D2E6 /* MenuIcon.png in Resources */,
+				ABA1699C13FE16790024D2E6 /* MenuIcon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

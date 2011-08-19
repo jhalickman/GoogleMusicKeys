@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>MenuIcon.png</string>
+	<string>MenuIcon.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.halickman.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
