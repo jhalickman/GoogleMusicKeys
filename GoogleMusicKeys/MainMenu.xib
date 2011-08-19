@@ -12,8 +12,8 @@
     </object>
     <object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
       <bool key="EncodedWithXMLCoder">YES</bool>
-      <integer value="631"/>
       <integer value="533"/>
+      <integer value="631"/>
     </object>
     <object class="NSArray" key="IBDocument.PluginDependencies">
       <bool key="EncodedWithXMLCoder">YES</bool>
@@ -134,11 +134,11 @@
         </object>
       </object>
       <object class="NSWindowTemplate" id="86730624">
-        <int key="NSWindowStyleMask">8211</int>
+        <int key="NSWindowStyleMask">3</int>
         <int key="NSWindowBacking">2</int>
-        <string key="NSWindowRect">{{577, 682}, {446, 255}}</string>
+        <string key="NSWindowRect">{{577, 682}, {426, 255}}</string>
         <int key="NSWTFlags">1685586944</int>
-        <string key="NSWindowTitle">Google Music Keys</string>
+        <string key="NSWindowTitle">About Google Music Keys</string>
         <string key="NSWindowClass">NSPanel</string>
         <nil key="NSViewClass"/>
         <nil key="NSUserInterfaceItemIdentifier"/>
@@ -174,9 +174,14 @@
                     <bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
                   </object>
                 </object>
-                <object class="NSColor" key="NSTextColor" id="56356779">
-                  <int key="NSColorSpace">1</int>
-                  <bytes key="NSRGB">MSAxIDEAA</bytes>
+                <object class="NSColor" key="NSTextColor" id="790998075">
+                  <int key="NSColorSpace">6</int>
+                  <string key="NSCatalogName">System</string>
+                  <string key="NSColorName">textColor</string>
+                  <object class="NSColor" key="NSColor">
+                    <int key="NSColorSpace">3</int>
+                    <bytes key="NSWhite">MAA</bytes>
+                  </object>
                 </object>
               </object>
             </object>
@@ -198,7 +203,10 @@
                 <string key="NSPlaceholderString">Version MM.mm.bb s rr (MMmmb.bs.rr)</string>
                 <reference key="NSControlView" ref="772233532"/>
                 <reference key="NSBackgroundColor" ref="797142023"/>
-                <reference key="NSTextColor" ref="56356779"/>
+                <object class="NSColor" key="NSTextColor">
+                  <int key="NSColorSpace">1</int>
+                  <bytes key="NSRGB">MSAxIDEAA</bytes>
+                </object>
               </object>
             </object>
             <object class="NSTextField" id="320530056">
@@ -219,7 +227,7 @@
                 </object>
                 <reference key="NSControlView" ref="320530056"/>
                 <reference key="NSBackgroundColor" ref="797142023"/>
-                <reference key="NSTextColor" ref="56356779"/>
+                <reference key="NSTextColor" ref="790998075"/>
               </object>
             </object>
             <object class="NSTextField" id="988196515">
@@ -235,13 +243,13 @@
                 <reference key="NSSupport" ref="953900693"/>
                 <reference key="NSControlView" ref="988196515"/>
                 <reference key="NSBackgroundColor" ref="797142023"/>
-                <reference key="NSTextColor" ref="56356779"/>
+                <reference key="NSTextColor" ref="790998075"/>
               </object>
             </object>
             <object class="NSButton" id="768290898">
               <reference key="NSNextResponder" ref="603737374"/>
               <int key="NSvFlags">268</int>
-              <string key="NSFrame">{{78, 61}, {256, 27}}</string>
+              <string key="NSFrame">{{78, 63}, {256, 25}}</string>
               <reference key="NSSuperview" ref="603737374"/>
               <reference key="NSNextKeyView" ref="772233532"/>
               <bool key="NSEnabled">YES</bool>
@@ -251,8 +259,8 @@
                 <string key="NSContents">Project Homepage</string>
                 <reference key="NSSupport" ref="953900693"/>
                 <reference key="NSControlView" ref="768290898"/>
-                <int key="NSButtonFlags">-2033434369</int>
-                <int key="NSButtonFlags2">160</int>
+                <int key="NSButtonFlags">-2035007233</int>
+                <int key="NSButtonFlags2">162</int>
                 <string key="NSAlternateContents"/>
                 <string key="NSKeyEquivalent"/>
                 <int key="NSPeriodicDelay">400</int>
@@ -260,7 +268,7 @@
               </object>
             </object>
           </object>
-          <string key="NSFrameSize">{446, 255}</string>
+          <string key="NSFrameSize">{426, 255}</string>
           <reference key="NSSuperview"/>
         </object>
         <string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
@@ -652,9 +660,9 @@
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-          <string>{{426, 475}, {446, 255}}</string>
+          <string>{{426, 475}, {426, 255}}</string>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-          <string>{{426, 475}, {446, 255}}</string>
+          <string>{{426, 475}, {426, 255}}</string>
           <boolean value="NO"/>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
           <string>com.apple.InterfaceBuilder.CocoaPlugin</string>
