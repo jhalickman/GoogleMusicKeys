@@ -224,8 +224,8 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
 	}
 	
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
-	//NSImage *statusImage = [NSImage imageNamed:@"gs16.png"];
-	[statusItem setTitle:@"GM"];
+	NSImage *statusImage = [NSImage imageNamed:@"MenuIcon.png"];
+	[statusItem setImage:statusImage];
 	[statusItem setHighlightMode:YES];
 	
 	[statusItem setMenu:statusMenu];
