@@ -41,6 +41,7 @@
 - (IBAction)mediaKeys:(id)sender;
 - (IBAction)globalKeys:(id)sender;
 - (IBAction)showAbout:(id)sender;
+- (IBAction)openLink:(id)sender;
 - (void)registerHotKeys:(BOOL)registerKeys;
 - (CGEventRef) processEvent:(CGEventRef)event withType:(CGEventType)type;
 - (void) showMesage:(NSString *) message;
