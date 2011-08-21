@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NextKey</key>
+	<array>
+		<integer>47</integer>
+		<integer>262144</integer>
+	</array>
+	<key>PlayPauseKey</key>
+	<array>
+		<integer>24</integer>
+		<integer>262144</integer>
+	</array>
+	<key>PreviousKey</key>
+	<array>
+		<integer>43</integer>
+		<integer>262144</integer>
+	</array>
+	<key>ShuffleKey</key>
+	<array>
+		<integer>50</integer>
+		<integer>262144</integer>
+	</array>
+	<key>EnableGlobalKeys</key>
+	<true/>
+	<key>EnableMediaKeys</key>
+	<true/>
+	<key>HasLaunchedOnce</key>
+	<false/>
+</dict>
+</plist>

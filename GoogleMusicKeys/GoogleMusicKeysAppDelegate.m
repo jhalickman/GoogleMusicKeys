@@ -8,7 +8,8 @@
 
 #import "GoogleMusicKeysAppDelegate.h"
 #import <Carbon/Carbon.h>
-#import "SRCommon.h"
+#import "PTHotKey.h"
+#import "PTHotKeyCenter.h"
 
 @implementation GoogleMusicKeysAppDelegate
 
@@ -61,7 +62,44 @@
 
 #pragma mark Hotkeys
 - (void)registerHotKeys:(BOOL)registerKeys {
+	if (registerKeys == YES) {
+		if (hotKeyRegistered == NO) {
+			
+			[self registerAction:@selector(previous) forKey:@"PreviousKey"];
+			[self registerAction:@selector(next) forKey:@"NextKey"];
+			[self registerAction:@selector(playPause) forKey:@"PlayPauseKey"];
+			[self registerAction:@selector(shuffle) forKey:@"ShuffleKey"];
+			
+			hotKeyRegistered = YES;
+			[[NSUserDefaults standardUserDefaults] setBool:1 forKey:@"EnableGlobalKeys"];
+			[mi_globalKeys setState:NSOnState];
+		}
+	} else if (registerKeys == NO) {
+		if (hotKeyRegistered == YES) {
+			[[PTHotKeyCenter sharedCenter] unregisterAllKeys];
+			[mi_globalKeys setState:NSOffState];
+			[[NSUserDefaults standardUserDefaults] setBool:0 forKey:@"EnableGlobalKeys"];
+			hotKeyRegistered = NO;
+		}
+	}
+}
+
+- (void)registerAction:(SEL)method forKey:(NSString *)key {
 	
+	NSDictionary *keyDefinition = [[NSUserDefaults standardUserDefaults] dictionaryForKey:key];	
+	
+	PTHotKey *globalHotKey = [[PTHotKey alloc] initWithIdentifier:key
+											 keyCombo:[PTKeyCombo keyComboWithKeyCode:[[keyDefinition objectForKey:@"keyCode"] intValue]
+																			modifiers:SRCocoaToCarbonFlags([[keyDefinition objectForKey:@"modifierFlags"] intValue])]];
+	[globalHotKey setTarget: controller];
+	[globalHotKey setAction:method];
+	[[PTHotKeyCenter sharedCenter] registerHotKey: globalHotKey];
+	[globalHotKey release];
+}
+
+- (void) callControllerMethod: (id)sender {
+	
+	NSLog(@"%@",sender);
 }
 
 #pragma mark MediaKeys

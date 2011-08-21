@@ -9,6 +9,8 @@
 #import <Cocoa/Cocoa.h>
 #import "GoogleMusicController.h"
 #import "MAAttachedWindow.h"
+#import "SRCommon.h"
+
 
 @interface GoogleMusicKeysAppDelegate : NSObject <NSApplicationDelegate> {
     NSStatusItem *statusItem;
@@ -42,4 +44,6 @@
 - (void)registerHotKeys:(BOOL)registerKeys;
 - (CGEventRef) processEvent:(CGEventRef)event withType:(CGEventType)type;
 - (void) showMesage:(NSString *) message;
+- (void)registerAction:(SEL) method forKey:(NSString *)key;
+
 @end
