@@ -7,19 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MusicControllerBase.h"
 
-typedef void (^GoogleMusicControllerError)(NSString *error);
-
-@interface GoogleMusicController : NSObject
-{
-    GoogleMusicControllerError			error;
+@interface GoogleMusicController : MusicControllerBase {
 }
 
-@property(nonatomic, copy) GoogleMusicControllerError error;
-
--(void) playPause;
--(void) next;
--(void) previous;
--(void) shuffle;
--(void) show;
 @end

@@ -249,7 +249,7 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
-    controller = [[GoogleMusicController alloc] init];
+    controller = [[AmazonCloudPlayerController alloc] init];
     controller.error = ^(NSString *message) {
 		NSAlert *alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
 		[alert runModal];

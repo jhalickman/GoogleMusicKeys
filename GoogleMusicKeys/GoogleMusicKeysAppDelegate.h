@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "GoogleMusicController.h"
+#import "AmazonCloudPlayerController.h"
 #import "MAAttachedWindow.h"
 #import "SRCommon.h"
 
@@ -28,7 +29,7 @@
 	NSString *bundlePath;
 	CFMachPortRef eventTap;
     
-    GoogleMusicController *controller;
+    AmazonCloudPlayerController *controller;
     
     MAAttachedWindow *attachedWindow;
     IBOutlet NSView *view;

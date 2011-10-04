@@ -10,6 +10,8 @@
 		AB5DC91B13DFAB530092D43B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5DC91A13DFAB530092D43B /* Carbon.framework */; };
 		AB5DC93213DFAE190092D43B /* GMKApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC93113DFAE190092D43B /* GMKApplication.m */; };
 		AB81362C13E484B40062D81A /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AB81362B13E484B40062D81A /* MAAttachedWindow.m */; };
+		AB8A131D143AC1BB00101ACB /* AmazonCloudPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A131C143AC1BB00101ACB /* AmazonCloudPlayerController.m */; };
+		AB8A1320143AC1D200101ACB /* MusicControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A131F143AC1D200101ACB /* MusicControllerBase.m */; };
 		ABA168D513FE096C0024D2E6 /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABA168D413FE096C0024D2E6 /* MenuIcon.png */; };
 		ABA1699C13FE16790024D2E6 /* MenuIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ABA1699B13FE16790024D2E6 /* MenuIcon.icns */; };
 		ABA169C21400A1150024D2E6 /* PTHotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA169BB1400A1150024D2E6 /* PTHotKey.m */; };
@@ -60,6 +62,10 @@
 		AB5DC93113DFAE190092D43B /* GMKApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMKApplication.m; sourceTree = "<group>"; };
 		AB81362A13E484B40062D81A /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		AB81362B13E484B40062D81A /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		AB8A131B143AC1BB00101ACB /* AmazonCloudPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonCloudPlayerController.h; sourceTree = "<group>"; };
+		AB8A131C143AC1BB00101ACB /* AmazonCloudPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonCloudPlayerController.m; sourceTree = "<group>"; };
+		AB8A131E143AC1D200101ACB /* MusicControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicControllerBase.h; sourceTree = "<group>"; };
+		AB8A131F143AC1D200101ACB /* MusicControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicControllerBase.m; sourceTree = "<group>"; };
 		ABA168D413FE096C0024D2E6 /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon.png; sourceTree = "<group>"; };
 		ABA1699B13FE16790024D2E6 /* MenuIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MenuIcon.icns; sourceTree = "<group>"; };
 		ABA169BA1400A1150024D2E6 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
@@ -202,6 +208,10 @@
 				ABF0E4A913DF9EBA00ABF313 /* GoogleMusicController.h */,
 				ABF0E4AA13DF9EBA00ABF313 /* GoogleMusicController.m */,
 				ABF0E48513DF9DDE00ABF313 /* Supporting Files */,
+				AB8A131B143AC1BB00101ACB /* AmazonCloudPlayerController.h */,
+				AB8A131C143AC1BB00101ACB /* AmazonCloudPlayerController.m */,
+				AB8A131E143AC1D200101ACB /* MusicControllerBase.h */,
+				AB8A131F143AC1D200101ACB /* MusicControllerBase.m */,
 			);
 			path = GoogleMusicKeys;
 			sourceTree = "<group>";
@@ -257,6 +267,9 @@
 /* Begin PBXProject section */
 		ABF0E47113DF9DDE00ABF313 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = ABF0E47413DF9DDE00ABF313 /* Build configuration list for PBXProject "GoogleMusicKeys" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -311,6 +324,8 @@
 				ABA16A191400A6190024D2E6 /* SRRecorderCell.m in Sources */,
 				ABA16A1A1400A6190024D2E6 /* SRRecorderControl.m in Sources */,
 				ABA16A1B1400A6190024D2E6 /* SRValidator.m in Sources */,
+				AB8A131D143AC1BB00101ACB /* AmazonCloudPlayerController.m in Sources */,
+				AB8A1320143AC1D200101ACB /* MusicControllerBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
