@@ -89,12 +89,12 @@
 		ABA16A151400A6190024D2E6 /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
 		ABA16A281400A72B0024D2E6 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		ABEB0D0413E5197400ADFBE7 /* PreferencePane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencePane.xib; sourceTree = "<group>"; };
-		ABF0E47A13DF9DDE00ABF313 /* GoogleMusicKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleMusicKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF0E47A13DF9DDE00ABF313 /* MusicKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF0E47E13DF9DDE00ABF313 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		ABF0E48113DF9DDE00ABF313 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		ABF0E48213DF9DDE00ABF313 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		ABF0E48313DF9DDE00ABF313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		ABF0E48613DF9DDE00ABF313 /* GoogleMusicKeys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleMusicKeys-Info.plist"; sourceTree = "<group>"; };
+		ABF0E48613DF9DDE00ABF313 /* MusicKeys-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicKeys-Info.plist"; sourceTree = "<group>"; };
 		ABF0E48813DF9DDE00ABF313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ABF0E48A13DF9DDE00ABF313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABF0E48C13DF9DDE00ABF313 /* GoogleMusicKeys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMusicKeys-Prefix.pch"; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		ABF0E47B13DF9DDE00ABF313 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0E47A13DF9DDE00ABF313 /* GoogleMusicKeys.app */,
+				ABF0E47A13DF9DDE00ABF313 /* MusicKeys.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 				ABA1699B13FE16790024D2E6 /* MenuIcon.icns */,
 				ABA168D413FE096C0024D2E6 /* MenuIcon.png */,
 				ABA16A281400A72B0024D2E6 /* Defaults.plist */,
-				ABF0E48613DF9DDE00ABF313 /* GoogleMusicKeys-Info.plist */,
+				ABF0E48613DF9DDE00ABF313 /* MusicKeys-Info.plist */,
 				ABF0E48713DF9DDE00ABF313 /* InfoPlist.strings */,
 				ABF0E48A13DF9DDE00ABF313 /* main.m */,
 				ABF0E48C13DF9DDE00ABF313 /* GoogleMusicKeys-Prefix.pch */,
@@ -252,9 +252,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABF0E47913DF9DDE00ABF313 /* GoogleMusicKeys */ = {
+		ABF0E47913DF9DDE00ABF313 /* MusicKeys */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABF0E49813DF9DDF00ABF313 /* Build configuration list for PBXNativeTarget "GoogleMusicKeys" */;
+			buildConfigurationList = ABF0E49813DF9DDF00ABF313 /* Build configuration list for PBXNativeTarget "MusicKeys" */;
 			buildPhases = (
 				ABF0E47613DF9DDE00ABF313 /* Sources */,
 				ABF0E47713DF9DDE00ABF313 /* Frameworks */,
@@ -265,9 +265,9 @@
 			);
 			dependencies = (
 			);
-			name = GoogleMusicKeys;
+			name = MusicKeys;
 			productName = GoogleMusicKeys;
-			productReference = ABF0E47A13DF9DDE00ABF313 /* GoogleMusicKeys.app */;
+			productReference = ABF0E47A13DF9DDE00ABF313 /* MusicKeys.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +278,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = ABF0E47413DF9DDE00ABF313 /* Build configuration list for PBXProject "GoogleMusicKeys" */;
+			buildConfigurationList = ABF0E47413DF9DDE00ABF313 /* Build configuration list for PBXProject "MusicKeys" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -290,7 +290,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABF0E47913DF9DDE00ABF313 /* GoogleMusicKeys */,
+				ABF0E47913DF9DDE00ABF313 /* MusicKeys */,
 			);
 		};
 /* End PBXProject section */
@@ -415,8 +415,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoogleMusicKeys/GoogleMusicKeys-Prefix.pch";
-				INFOPLIST_FILE = "GoogleMusicKeys/GoogleMusicKeys-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GoogleMusicKeys/MusicKeys-Info.plist";
+				PRODUCT_NAME = MusicKeys;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -430,8 +430,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoogleMusicKeys/GoogleMusicKeys-Prefix.pch";
-				INFOPLIST_FILE = "GoogleMusicKeys/GoogleMusicKeys-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GoogleMusicKeys/MusicKeys-Info.plist";
+				PRODUCT_NAME = MusicKeys;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -439,7 +439,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABF0E47413DF9DDE00ABF313 /* Build configuration list for PBXProject "GoogleMusicKeys" */ = {
+		ABF0E47413DF9DDE00ABF313 /* Build configuration list for PBXProject "MusicKeys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABF0E49613DF9DDF00ABF313 /* Debug */,
@@ -448,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABF0E49813DF9DDF00ABF313 /* Build configuration list for PBXNativeTarget "GoogleMusicKeys" */ = {
+		ABF0E49813DF9DDF00ABF313 /* Build configuration list for PBXNativeTarget "MusicKeys" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ABF0E49913DF9DDF00ABF313 /* Debug */,
