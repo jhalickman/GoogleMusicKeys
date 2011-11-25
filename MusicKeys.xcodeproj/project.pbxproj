@@ -32,7 +32,7 @@
 		ABF0E48913DF9DDE00ABF313 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABF0E48713DF9DDE00ABF313 /* InfoPlist.strings */; };
 		ABF0E48B13DF9DDE00ABF313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0E48A13DF9DDE00ABF313 /* main.m */; };
 		ABF0E48F13DF9DDE00ABF313 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = ABF0E48D13DF9DDE00ABF313 /* Credits.rtf */; };
-		ABF0E49213DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0E49113DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.m */; };
+		ABF0E49213DF9DDE00ABF313 /* MusicKeysAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0E49113DF9DDE00ABF313 /* MusicKeysAppDelegate.m */; };
 		ABF0E4A813DF9E3800ABF313 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF0E4A713DF9E3800ABF313 /* ScriptingBridge.framework */; };
 		ABF0E4AB13DF9EBA00ABF313 /* GoogleMusicController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0E4AA13DF9EBA00ABF313 /* GoogleMusicController.m */; };
 		ABF0E4AE13DFA72F00ABF313 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF0E4AC13DFA72E00ABF313 /* MainMenu.xib */; };
@@ -99,8 +99,8 @@
 		ABF0E48A13DF9DDE00ABF313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABF0E48C13DF9DDE00ABF313 /* GoogleMusicKeys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoogleMusicKeys-Prefix.pch"; sourceTree = "<group>"; };
 		ABF0E48E13DF9DDE00ABF313 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		ABF0E49013DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMusicKeysAppDelegate.h; sourceTree = "<group>"; };
-		ABF0E49113DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMusicKeysAppDelegate.m; sourceTree = "<group>"; };
+		ABF0E49013DF9DDE00ABF313 /* MusicKeysAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicKeysAppDelegate.h; sourceTree = "<group>"; };
+		ABF0E49113DF9DDE00ABF313 /* MusicKeysAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicKeysAppDelegate.m; sourceTree = "<group>"; };
 		ABF0E4A413DF9E1700ABF313 /* Chrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chrome.h; sourceTree = "<group>"; };
 		ABF0E4A513DF9E1700ABF313 /* Safari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Safari.h; sourceTree = "<group>"; };
 		ABF0E4A713DF9E3800ABF313 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
@@ -164,7 +164,7 @@
 				ABA169B91400A1150024D2E6 /* HotKey */,
 				AB5DC91C13DFADED0092D43B /* ShortcutRecorder */,
 				ABF0E4A313DF9E1700ABF313 /* BridgeHeaders */,
-				ABF0E48413DF9DDE00ABF313 /* GoogleMusicKeys */,
+				ABF0E48413DF9DDE00ABF313 /* MusicKeys */,
 				ABF0E47D13DF9DDE00ABF313 /* Frameworks */,
 				ABF0E47B13DF9DDE00ABF313 /* Products */,
 			);
@@ -199,7 +199,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		ABF0E48413DF9DDE00ABF313 /* GoogleMusicKeys */ = {
+		ABF0E48413DF9DDE00ABF313 /* MusicKeys */ = {
 			isa = PBXGroup;
 			children = (
 				ABEB0D0413E5197400ADFBE7 /* PreferencePane.xib */,
@@ -208,8 +208,8 @@
 				AB81362B13E484B40062D81A /* MAAttachedWindow.m */,
 				AB5DC93013DFAE190092D43B /* GMKApplication.h */,
 				AB5DC93113DFAE190092D43B /* GMKApplication.m */,
-				ABF0E49013DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.h */,
-				ABF0E49113DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.m */,
+				ABF0E49013DF9DDE00ABF313 /* MusicKeysAppDelegate.h */,
+				ABF0E49113DF9DDE00ABF313 /* MusicKeysAppDelegate.m */,
 				ABF0E4A913DF9EBA00ABF313 /* GoogleMusicController.h */,
 				ABF0E4AA13DF9EBA00ABF313 /* GoogleMusicController.m */,
 				ABF0E48513DF9DDE00ABF313 /* Supporting Files */,
@@ -220,6 +220,7 @@
 				AB80EFB8147F59E2008D1DEE /* ExFmController.h */,
 				AB80EFB9147F59E2008D1DEE /* ExFmController.m */,
 			);
+			name = MusicKeys;
 			path = GoogleMusicKeys;
 			sourceTree = "<group>";
 		};
@@ -319,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABF0E48B13DF9DDE00ABF313 /* main.m in Sources */,
-				ABF0E49213DF9DDE00ABF313 /* GoogleMusicKeysAppDelegate.m in Sources */,
+				ABF0E49213DF9DDE00ABF313 /* MusicKeysAppDelegate.m in Sources */,
 				ABF0E4AB13DF9EBA00ABF313 /* GoogleMusicController.m in Sources */,
 				AB5DC93213DFAE190092D43B /* GMKApplication.m in Sources */,
 				AB81362C13E484B40062D81A /* MAAttachedWindow.m in Sources */,

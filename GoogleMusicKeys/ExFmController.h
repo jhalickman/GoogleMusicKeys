@@ -1,6 +1,6 @@
 //
 //  ExFmController.h
-//  GoogleMusicKeys
+//  MusicKeys
 //
 //  Created by Joshua Halickman on 11/25/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.

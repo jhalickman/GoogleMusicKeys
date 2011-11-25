@@ -40,7 +40,7 @@
         <string key="NSClassName">GMKApplication</string>
       </object>
       <object class="NSCustomObject" id="976324537">
-        <string key="NSClassName">GoogleMusicKeysAppDelegate</string>
+        <string key="NSClassName">MusicKeysAppDelegate</string>
       </object>
       <object class="NSCustomObject" id="755631768">
         <string key="NSClassName">NSFontManager</string>
@@ -858,7 +858,7 @@
           </object>
         </object>
         <object class="IBPartialClassDescription">
-          <string key="className">GoogleMusicKeysAppDelegate</string>
+          <string key="className">MusicKeysAppDelegate</string>
           <string key="superclassName">NSObject</string>
           <object class="NSMutableDictionary" key="actions">
             <bool key="EncodedWithXMLCoder">YES</bool>
@@ -1038,7 +1038,7 @@
           </object>
           <object class="IBClassDescriptionSource" key="sourceIdentifier">
             <string key="majorKey">IBProjectSource</string>
-            <string key="minorKey">GoogleMusicKeys/GoogleMusicKeysAppDelegate.h</string>
+            <string key="minorKey">GoogleMusicKeys/MusicKeysAppDelegate.h</string>
           </object>
         </object>
         <object class="IBPartialClassDescription">

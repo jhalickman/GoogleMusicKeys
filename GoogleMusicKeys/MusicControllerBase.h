@@ -1,6 +1,6 @@
 //
 //  MusicControllerBase.h
-//  GoogleMusicKeys
+//  MusicKeys
 //
 //  Created by Joshua Halickman on 10/4/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
