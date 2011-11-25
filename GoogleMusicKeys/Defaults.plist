@@ -27,6 +27,8 @@
 	<key>EnableMediaKeys</key>
 	<true/>
 	<key>HasLaunchedOnce</key>
-	<false/>
+	<true/>
+	<key>ServiceName</key>
+	<string>ServiceGoogleMusic</string>
 </dict>
 </plist>

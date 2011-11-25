@@ -10,6 +10,12 @@
 #import <Carbon/Carbon.h>
 #import "PTHotKey.h"
 #import "PTHotKeyCenter.h"
+#import "ExFmController.h"
+
+#define ServiceGoogleMusic @"ServiceGoogleMusic"
+#define ServiceAmazon @"ServiceAmazon"
+#define ServiceExFM @"ServiceExFM"
+
 
 @implementation GoogleMusicKeysAppDelegate
 
@@ -238,6 +244,52 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
     attachedWindow = nil;
 }
 
+- (IBAction)serviceSelected:(id)sender {
+	NSMenuItem *mi = (NSMenuItem *)sender;
+	switch ([mi tag]) {
+		case 0:
+			[[NSUserDefaults standardUserDefaults] setObject:ServiceGoogleMusic forKey:@"ServiceName"];
+			break;
+		case 1:
+			[[NSUserDefaults standardUserDefaults] setObject:ServiceAmazon forKey:@"ServiceName"];
+			break;
+		case 2:
+			[[NSUserDefaults standardUserDefaults] setObject:ServiceExFM forKey:@"ServiceName"];
+			break;
+		default:
+			break;
+	}
+	
+	[self setService:[[NSUserDefaults standardUserDefaults]  objectForKey:@"ServiceName"]];
+}
+
+- (void)setService:(NSString *)serviceName {
+	
+	[mi_serviceExFm setState:NSOffState];
+	[mi_serviceAmazon setState:NSOffState];
+	[mi_serviceGoogleMusic setState:NSOffState];
+	[controller release];
+	controller = nil;
+	
+	if ([serviceName isEqualToString:ServiceGoogleMusic]) {
+		controller = [[GoogleMusicController alloc] init];
+		[mi_serviceGoogleMusic setState:NSOnState];
+	} else if ([serviceName isEqualToString:ServiceAmazon]) {
+		controller = [[AmazonCloudPlayerController alloc] init];
+		[mi_serviceAmazon setState:NSOnState];
+	} else if ([serviceName isEqualToString:ServiceExFM]) {
+		controller = [[ExFmController alloc] init];
+		[mi_serviceExFm setState:NSOnState];
+	}
+	
+	controller.error = ^(NSString *message) {
+		NSAlert *alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
+		[alert runModal];
+		//[self showMesage:message];
+		//[self performSelectorOnMainThread:@selector(showMesage:) withObject:message waitUntilDone:YES];
+    };
+}
+
 #pragma mark Initalization
 + (void)initialize {
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -249,13 +301,6 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     
-    controller = [[AmazonCloudPlayerController alloc] init];
-    controller.error = ^(NSString *message) {
-		NSAlert *alert = [NSAlert alertWithMessageText:message defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
-		[alert runModal];
-		//[self showMesage:message];
-		//[self performSelectorOnMainThread:@selector(showMesage:) withObject:message waitUntilDone:YES];
-    };
     
 	bundlePath = [[NSBundle mainBundle] bundlePath];
 	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
@@ -270,6 +315,10 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
 	[statusItem setHighlightMode:YES];
 	
 	[statusItem setMenu:statusMenu];
+	
+	[self setService:[[NSUserDefaults standardUserDefaults]  objectForKey:@"ServiceName"]];
+
+	
 	hotKeyRegistered = NO;
 	mediaKeyRegistered = YES;
 	[mi_mediaKeys setState:NSOnState];

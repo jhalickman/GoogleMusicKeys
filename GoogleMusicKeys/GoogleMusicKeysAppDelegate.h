@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "GoogleMusicController.h"
 #import "AmazonCloudPlayerController.h"
+#import "MusicControllerBase.h"
 #import "MAAttachedWindow.h"
 #import "SRCommon.h"
 
@@ -20,6 +21,9 @@
 	IBOutlet NSMenuItem *mi_startAtLogin;
 	IBOutlet NSMenuItem *mi_mediaKeys;
 	IBOutlet NSMenuItem *mi_globalKeys;
+	IBOutlet NSMenuItem *mi_serviceGoogleMusic;
+	IBOutlet NSMenuItem *mi_serviceAmazon;
+	IBOutlet NSMenuItem *mi_serviceExFm;
 	IBOutlet NSWindow *mi_firstLaunch;
 	IBOutlet NSWindow *mi_preferenceWindow;
 	BOOL hotKeyRegistered;
@@ -29,7 +33,7 @@
 	NSString *bundlePath;
 	CFMachPortRef eventTap;
     
-    AmazonCloudPlayerController *controller;
+    MusicControllerBase *controller;
     
     MAAttachedWindow *attachedWindow;
     IBOutlet NSView *view;
@@ -43,6 +47,7 @@
 - (IBAction)globalKeys:(id)sender;
 - (IBAction)showAbout:(id)sender;
 - (IBAction)openLink:(id)sender;
+- (IBAction)serviceSelected:(id)sender;
 - (void)registerHotKeys:(BOOL)registerKeys;
 - (CGEventRef) processEvent:(CGEventRef)event withType:(CGEventType)type;
 - (void) showMesage:(NSString *) message;

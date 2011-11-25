@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB21FD4B14578CFD007800D9 /* MenuIconGray.png in Resources */ = {isa = PBXBuildFile; fileRef = AB21FD4A14578CFD007800D9 /* MenuIconGray.png */; };
 		AB5DC91B13DFAB530092D43B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5DC91A13DFAB530092D43B /* Carbon.framework */; };
 		AB5DC93213DFAE190092D43B /* GMKApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = AB5DC93113DFAE190092D43B /* GMKApplication.m */; };
+		AB80EFBA147F59E2008D1DEE /* ExFmController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB80EFB9147F59E2008D1DEE /* ExFmController.m */; };
 		AB81362C13E484B40062D81A /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = AB81362B13E484B40062D81A /* MAAttachedWindow.m */; };
 		AB8A131D143AC1BB00101ACB /* AmazonCloudPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A131C143AC1BB00101ACB /* AmazonCloudPlayerController.m */; };
 		AB8A1320143AC1D200101ACB /* MusicControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8A131F143AC1D200101ACB /* MusicControllerBase.m */; };
@@ -49,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AB21FD4A14578CFD007800D9 /* MenuIconGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIconGray.png; sourceTree = "<group>"; };
 		AB5DC91413DFA9F40092D43B /* FireFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireFox.h; sourceTree = "<group>"; };
 		AB5DC91A13DFAB530092D43B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		AB5DC91D13DFADED0092D43B /* ShortcutRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutRecorder.h; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 		AB5DC92813DFADED0092D43B /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
 		AB5DC93013DFAE190092D43B /* GMKApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMKApplication.h; sourceTree = "<group>"; };
 		AB5DC93113DFAE190092D43B /* GMKApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMKApplication.m; sourceTree = "<group>"; };
+		AB80EFB8147F59E2008D1DEE /* ExFmController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExFmController.h; sourceTree = "<group>"; };
+		AB80EFB9147F59E2008D1DEE /* ExFmController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExFmController.m; sourceTree = "<group>"; };
 		AB81362A13E484B40062D81A /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		AB81362B13E484B40062D81A /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		AB8A131B143AC1BB00101ACB /* AmazonCloudPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonCloudPlayerController.h; sourceTree = "<group>"; };
@@ -212,6 +217,8 @@
 				AB8A131C143AC1BB00101ACB /* AmazonCloudPlayerController.m */,
 				AB8A131E143AC1D200101ACB /* MusicControllerBase.h */,
 				AB8A131F143AC1D200101ACB /* MusicControllerBase.m */,
+				AB80EFB8147F59E2008D1DEE /* ExFmController.h */,
+				AB80EFB9147F59E2008D1DEE /* ExFmController.m */,
 			);
 			path = GoogleMusicKeys;
 			sourceTree = "<group>";
@@ -219,6 +226,7 @@
 		ABF0E48513DF9DDE00ABF313 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB21FD4A14578CFD007800D9 /* MenuIconGray.png */,
 				ABA1699B13FE16790024D2E6 /* MenuIcon.icns */,
 				ABA168D413FE096C0024D2E6 /* MenuIcon.png */,
 				ABA16A281400A72B0024D2E6 /* Defaults.plist */,
@@ -299,6 +307,7 @@
 				ABA168D513FE096C0024D2E6 /* MenuIcon.png in Resources */,
 				ABA1699C13FE16790024D2E6 /* MenuIcon.icns in Resources */,
 				ABA16A291400A72B0024D2E6 /* Defaults.plist in Resources */,
+				AB21FD4B14578CFD007800D9 /* MenuIconGray.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +335,7 @@
 				ABA16A1B1400A6190024D2E6 /* SRValidator.m in Sources */,
 				AB8A131D143AC1BB00101ACB /* AmazonCloudPlayerController.m in Sources */,
 				AB8A1320143AC1D200101ACB /* MusicControllerBase.m in Sources */,
+				AB80EFBA147F59E2008D1DEE /* ExFmController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
