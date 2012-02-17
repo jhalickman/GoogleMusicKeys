@@ -52,7 +52,7 @@
     for(ChromeWindow *window in chrome.windows) {
         for (ChromeTab *tab in window.tabs) {
             if([tab.title hasSuffix:[self getTabName]]) {
-                [tab executeJavascript:[NSString stringWithFormat:@"SJBpost('%@');", command]];
+                [tab executeJavascript:command];
                 return YES;
             }
         }
@@ -89,6 +89,7 @@
     for(ChromeWindow *window in chrome.windows) {
 		int i = 1;
         for (ChromeTab *tab in window.tabs) {
+			NSLog(@"%@", tab.title);
             if([tab.title hasSuffix:[self getTabName]]) {
                 [chrome activate];
 				[window setActiveTabIndex:i];

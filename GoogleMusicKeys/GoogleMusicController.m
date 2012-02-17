@@ -37,7 +37,7 @@
 }
 
 -(NSString *)getTabName {
-	return @"Music Beta";
+	return @"Google Music";
 }
 
     
