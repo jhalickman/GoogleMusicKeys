@@ -16,9 +16,11 @@
 #define ServiceAmazon @"ServiceAmazon"
 #define ServiceExFM @"ServiceExFM"
 
+@interface MusicKeysAppDelegate ()
+CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef event, void *refcon);
+@end
 
 @implementation MusicKeysAppDelegate
-
 
 #pragma mark "Launch at Login"
 - (BOOL)isSetForLogin:(LSSharedFileListRef)loginItems ForPath:(NSString *)path {
