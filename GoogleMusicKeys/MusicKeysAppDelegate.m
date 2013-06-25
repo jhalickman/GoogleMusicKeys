@@ -1,5 +1,5 @@
 //
-//  GoogleMusicKeysAppDelegate.m
+//  MusicKeysAppDelegate.m
 //  MusicKeys
 //
 //  Created by Joshua Halickman on 7/26/11.

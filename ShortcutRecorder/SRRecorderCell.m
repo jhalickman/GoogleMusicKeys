@@ -68,6 +68,8 @@
 	
 	[cancelCharacterSet release];
 	
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
 	[super dealloc];
 }
 
@@ -244,7 +246,7 @@
 			
 		// Draw snapback image
 			NSImage *snapBackArrow = SRResIndImage(@"SRSnapback");	
-			[snapBackArrow dissolveToPoint:[self _snapbackRectForFrame: cellFrame].origin fraction:1.0f];
+			[snapBackArrow drawAtPoint:[self _snapbackRectForFrame: cellFrame].origin fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0f];
 			
 		// Because of the gradient and snapback image, the white rounded rect will be smaller
 			whiteRect = NSInsetRect(cellFrame, 9.5f, 2.0f);
@@ -270,7 +272,7 @@
 			{
 				NSString *removeImageName = [NSString stringWithFormat: @"SRRemoveShortcut%@", (mouseInsideTrackingArea ? (mouseDown ? @"Pressed" : @"Rollover") : (mouseDown ? @"Rollover" : @""))];
 				NSImage *removeImage = SRResIndImage(removeImageName);
-				[removeImage dissolveToPoint:[self _removeButtonRectForFrame: cellFrame].origin fraction:1.0f];
+                [removeImage drawAtPoint:[self _removeButtonRectForFrame: cellFrame].origin fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0f];
 			}
 		}
 		
@@ -459,7 +461,7 @@
 			
 		// Draw snapback image
 			NSImage *snapBackArrow = SRResIndImage(@"SRSnapback");
-			[snapBackArrow dissolveToPoint:correctedSnapBackOrigin fraction:1.0f*alphaRecording];
+            [snapBackArrow drawAtPoint:correctedSnapBackOrigin fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0f*alphaRecording];
 		}
 		
 	// Draw border and remove badge if needed
@@ -471,8 +473,8 @@
 		{
 			NSString *removeImageName = [NSString stringWithFormat: @"SRRemoveShortcut%@", (mouseInsideTrackingArea ? (mouseDown ? @"Pressed" : @"Rollover") : (mouseDown ? @"Rollover" : @""))];
 			NSImage *removeImage = SRResIndImage(removeImageName);
-			[removeImage dissolveToPoint:[viewportMovement transformPoint:([self _removeButtonRectForFrame: cellFrame].origin)] fraction:alphaView];
-			//NSLog(@"drew removeImage with alpha %f", alphaView);
+            [removeImage drawAtPoint:[viewportMovement transformPoint:([self _removeButtonRectForFrame: cellFrame].origin)] fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:alphaView];
+//NSLog(@"drew removeImage with alpha %f", alphaView);
 		}
 //	}
 		
@@ -925,8 +927,16 @@
 	return allowsKeyOnly;
 }
 
+- (void)setAllowsKeyOnly:(BOOL)nAllowsKeyOnly {
+	allowsKeyOnly = nAllowsKeyOnly;
+}
+
 - (BOOL)escapeKeysRecord {
 	return escapeKeysRecord;
+}
+
+- (void)setEscapeKeysRecord:(BOOL)nEscapeKeysRecord {
+	escapeKeysRecord = nEscapeKeysRecord;
 }
 
 - (void)setAllowsKeyOnly:(BOOL)nAllowsKeyOnly escapeKeysRecord:(BOOL)nEscapeKeysRecord {
