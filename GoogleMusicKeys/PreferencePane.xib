@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12C3012</string>
+		<string key="IBDocument.SystemVersion">12E55</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.AppKitVersion">1187.39</string>
+		<string key="IBDocument.HIToolboxVersion">626.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">3084</string>
@@ -62,11 +62,12 @@
 							<string key="NSFrame">{{13, 10}, {378, 175}}</string>
 							<reference key="NSSuperview" ref="258887412"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView" ref="746037339"/>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="981604282">
 									<string key="NSIdentifier">1</string>
 									<object class="NSView" key="NSView" id="609290874">
-										<reference key="NSNextResponder" ref="182655983"/>
+										<nil key="NSNextResponder"/>
 										<int key="NSvFlags">256</int>
 										<array class="NSMutableArray" key="NSSubviews">
 											<object class="NSTextField" id="157892847">
@@ -74,7 +75,6 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{14, 59}, {114, 17}}</string>
 												<reference key="NSSuperview" ref="609290874"/>
-												<reference key="NSWindow"/>
 												<string key="NSReuseIdentifierKey">_NS:4068</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSTextFieldCell" key="NSCell" id="421809716">
@@ -114,7 +114,6 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{130, 52}, {171, 26}}</string>
 												<reference key="NSSuperview" ref="609290874"/>
-												<reference key="NSWindow"/>
 												<string key="NSReuseIdentifierKey">_NS:791</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSPopUpButtonCell" key="NSCell" id="147814725">
@@ -175,8 +174,6 @@
 											</object>
 										</array>
 										<string key="NSFrame">{{10, 33}, {358, 129}}</string>
-										<reference key="NSSuperview" ref="182655983"/>
-										<reference key="NSWindow"/>
 									</object>
 									<string key="NSLabel">Music Keys</string>
 									<reference key="NSColor" ref="23515534"/>
@@ -185,7 +182,7 @@
 								<object class="NSTabViewItem" id="1033231766">
 									<string key="NSIdentifier">Item 1</string>
 									<object class="NSView" key="NSView" id="746037339">
-										<nil key="NSNextResponder"/>
+										<reference key="NSNextResponder" ref="182655983"/>
 										<int key="NSvFlags">256</int>
 										<array class="NSMutableArray" key="NSSubviews">
 											<object class="NSTextField" id="386186683">
@@ -193,6 +190,8 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{39, 106}, {108, 17}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="1044494731"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSTextFieldCell" key="NSCell" id="992539393">
 													<int key="NSCellFlags">68157504</int>
@@ -210,6 +209,8 @@
 												<int key="NSvFlags">298</int>
 												<string key="NSFrame">{{152, 104}, {147, 22}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="117080835"/>
 												<string key="NSClassName">SRRecorderControl</string>
 											</object>
 											<object class="NSTextField" id="117080835">
@@ -217,6 +218,8 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{78, 78}, {69, 17}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="404526253"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSTextFieldCell" key="NSCell" id="155091988">
 													<int key="NSCellFlags">68157504</int>
@@ -234,6 +237,8 @@
 												<int key="NSvFlags">298</int>
 												<string key="NSFrame">{{152, 76}, {147, 22}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="307189007"/>
 												<string key="NSClassName">SRRecorderControl</string>
 											</object>
 											<object class="NSTextField" id="307189007">
@@ -241,6 +246,8 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{54, 48}, {93, 17}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="655044589"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSTextFieldCell" key="NSCell" id="460912230">
 													<int key="NSCellFlags">68157504</int>
@@ -258,6 +265,8 @@
 												<int key="NSvFlags">298</int>
 												<string key="NSFrame">{{152, 46}, {147, 22}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="528389131"/>
 												<string key="NSClassName">SRRecorderControl</string>
 											</object>
 											<object class="NSTextField" id="528389131">
@@ -265,6 +274,8 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{52, 18}, {95, 17}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="11440002"/>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSTextFieldCell" key="NSCell" id="496153256">
 													<int key="NSCellFlags">68157504</int>
@@ -282,23 +293,28 @@
 												<int key="NSvFlags">298</int>
 												<string key="NSFrame">{{152, 16}, {147, 22}}</string>
 												<reference key="NSSuperview" ref="746037339"/>
+												<reference key="NSWindow"/>
+												<reference key="NSNextKeyView" ref="182655983"/>
 												<string key="NSClassName">SRRecorderControl</string>
 											</object>
 										</array>
 										<string key="NSFrame">{{10, 33}, {358, 129}}</string>
+										<reference key="NSSuperview" ref="182655983"/>
+										<reference key="NSWindow"/>
+										<reference key="NSNextKeyView" ref="386186683"/>
 									</object>
 									<string key="NSLabel">Global Hotkeys</string>
 									<reference key="NSColor" ref="23515534"/>
 									<reference key="NSTabView" ref="182655983"/>
 								</object>
 							</array>
-							<reference key="NSSelectedTabViewItem" ref="981604282"/>
+							<reference key="NSSelectedTabViewItem" ref="1033231766"/>
 							<reference key="NSFont" ref="799537902"/>
 							<int key="NSTvFlags">0</int>
 							<bool key="NSAllowTruncatedLabels">YES</bool>
 							<bool key="NSDrawsBackground">YES</bool>
 							<array class="NSMutableArray" key="NSSubviews">
-								<reference ref="609290874"/>
+								<reference ref="746037339"/>
 							</array>
 						</object>
 					</array>
@@ -311,7 +327,7 @@
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
 			<object class="NSCustomObject" id="201351009">
-				<string key="NSClassName">GoogleMusicKeysAppDelegate</string>
+				<string key="NSClassName">MusicKeysAppDelegate</string>
 			</object>
 			<object class="NSUserDefaultsController" id="464426092">
 				<bool key="NSSharedInstance">YES</bool>
@@ -684,7 +700,7 @@
 								<integer value="1" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">escapeKeysRecord</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -699,7 +715,7 @@
 								<integer value="10354688" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">allowsKeyOnly</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -722,7 +738,7 @@
 								<integer value="1" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">escapeKeysRecord</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -737,7 +753,7 @@
 								<integer value="10354688" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">allowsKeyOnly</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -761,7 +777,7 @@
 								<integer value="1" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">escapeKeysRecord</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -776,7 +792,7 @@
 								<integer value="10354688" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">allowsKeyOnly</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -800,7 +816,7 @@
 								<integer value="1" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">escapeKeysRecord</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -815,7 +831,7 @@
 								<integer value="10354688" key="value"/>
 							</object>
 							<object class="IBUserDefinedRuntimeAttribute">
-								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.number</string>
+								<string key="typeIdentifier">com.apple.InterfaceBuilder.userDefinedRuntimeAttributeType.boolean</string>
 								<string key="keyPath">allowsKeyOnly</string>
 								<boolean value="NO" key="value"/>
 							</object>
@@ -858,6 +874,122 @@
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">MusicKeysAppDelegate</string>
+					<string key="superclassName">NSObject</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="globalKeys:">id</string>
+						<string key="mediaKeys:">id</string>
+						<string key="openLink:">id</string>
+						<string key="openPreferencesWindow:">id</string>
+						<string key="serviceSelected:">id</string>
+						<string key="showAbout:">id</string>
+						<string key="showGoogleMusic:">id</string>
+						<string key="startAtLogin:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="globalKeys:">
+							<string key="name">globalKeys:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="mediaKeys:">
+							<string key="name">mediaKeys:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="openLink:">
+							<string key="name">openLink:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="openPreferencesWindow:">
+							<string key="name">openPreferencesWindow:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="serviceSelected:">
+							<string key="name">serviceSelected:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showAbout:">
+							<string key="name">showAbout:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="showGoogleMusic:">
+							<string key="name">showGoogleMusic:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="startAtLogin:">
+							<string key="name">startAtLogin:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="mi_firstLaunch">NSWindow</string>
+						<string key="mi_globalKeys">NSMenuItem</string>
+						<string key="mi_mediaKeys">NSMenuItem</string>
+						<string key="mi_preferenceWindow">NSWindow</string>
+						<string key="mi_serviceAmazon">NSMenuItem</string>
+						<string key="mi_serviceExFm">NSMenuItem</string>
+						<string key="mi_serviceGoogleMusic">NSMenuItem</string>
+						<string key="mi_showGrooveshark">NSMenuItem</string>
+						<string key="mi_startAtLogin">NSMenuItem</string>
+						<string key="statusMenu">NSMenu</string>
+						<string key="textField">NSTextField</string>
+						<string key="view">NSView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="mi_firstLaunch">
+							<string key="name">mi_firstLaunch</string>
+							<string key="candidateClassName">NSWindow</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_globalKeys">
+							<string key="name">mi_globalKeys</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_mediaKeys">
+							<string key="name">mi_mediaKeys</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_preferenceWindow">
+							<string key="name">mi_preferenceWindow</string>
+							<string key="candidateClassName">NSWindow</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_serviceAmazon">
+							<string key="name">mi_serviceAmazon</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_serviceExFm">
+							<string key="name">mi_serviceExFm</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_serviceGoogleMusic">
+							<string key="name">mi_serviceGoogleMusic</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_showGrooveshark">
+							<string key="name">mi_showGrooveshark</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="mi_startAtLogin">
+							<string key="name">mi_startAtLogin</string>
+							<string key="candidateClassName">NSMenuItem</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="statusMenu">
+							<string key="name">statusMenu</string>
+							<string key="candidateClassName">NSMenu</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textField">
+							<string key="name">textField</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="view">
+							<string key="name">view</string>
+							<string key="candidateClassName">NSView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/MusicKeysAppDelegate.h</string>
+					</object>
+				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">SRRecorderCell</string>
 					<string key="superclassName">NSActionCell</string>
