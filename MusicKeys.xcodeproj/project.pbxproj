@@ -20,7 +20,6 @@
 		ABA169C31400A1150024D2E6 /* PTHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA169BD1400A1150024D2E6 /* PTHotKeyCenter.m */; };
 		ABA169C41400A1150024D2E6 /* PTKeyCodeTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA169BF1400A1150024D2E6 /* PTKeyCodeTranslator.m */; };
 		ABA169C51400A1150024D2E6 /* PTKeyCombo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA169C11400A1150024D2E6 /* PTKeyCombo.m */; };
-		ABA16A161400A6190024D2E6 /* SR_LeopardView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA16A101400A6190024D2E6 /* SR_LeopardView.m */; };
 		ABA16A171400A6190024D2E6 /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA16A111400A6190024D2E6 /* SRCommon.m */; };
 		ABA16A181400A6190024D2E6 /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA16A121400A6190024D2E6 /* SRKeyCodeTransformer.m */; };
 		ABA16A191400A6190024D2E6 /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA16A131400A6190024D2E6 /* SRRecorderCell.m */; };
@@ -54,8 +53,6 @@
 		AB21FD4A14578CFD007800D9 /* MenuIconGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIconGray.png; sourceTree = "<group>"; };
 		AB5DC91413DFA9F40092D43B /* FireFox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireFox.h; sourceTree = "<group>"; };
 		AB5DC91A13DFAB530092D43B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		AB5DC91D13DFADED0092D43B /* ShortcutRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutRecorder.h; sourceTree = "<group>"; };
-		AB5DC91E13DFADED0092D43B /* SR_LeopardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SR_LeopardView.h; sourceTree = "<group>"; };
 		AB5DC92013DFADED0092D43B /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
 		AB5DC92213DFADED0092D43B /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
 		AB5DC92413DFADED0092D43B /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
@@ -81,7 +78,6 @@
 		ABA169BF1400A1150024D2E6 /* PTKeyCodeTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCodeTranslator.m; sourceTree = "<group>"; };
 		ABA169C01400A1150024D2E6 /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
 		ABA169C11400A1150024D2E6 /* PTKeyCombo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKeyCombo.m; sourceTree = "<group>"; };
-		ABA16A101400A6190024D2E6 /* SR_LeopardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SR_LeopardView.m; sourceTree = "<group>"; };
 		ABA16A111400A6190024D2E6 /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
 		ABA16A121400A6190024D2E6 /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
 		ABA16A131400A6190024D2E6 /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
@@ -126,14 +122,11 @@
 		AB5DC91C13DFADED0092D43B /* ShortcutRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				ABA16A101400A6190024D2E6 /* SR_LeopardView.m */,
 				ABA16A111400A6190024D2E6 /* SRCommon.m */,
 				ABA16A121400A6190024D2E6 /* SRKeyCodeTransformer.m */,
 				ABA16A131400A6190024D2E6 /* SRRecorderCell.m */,
 				ABA16A141400A6190024D2E6 /* SRRecorderControl.m */,
 				ABA16A151400A6190024D2E6 /* SRValidator.m */,
-				AB5DC91D13DFADED0092D43B /* ShortcutRecorder.h */,
-				AB5DC91E13DFADED0092D43B /* SR_LeopardView.h */,
 				AB5DC92013DFADED0092D43B /* SRCommon.h */,
 				AB5DC92213DFADED0092D43B /* SRKeyCodeTransformer.h */,
 				AB5DC92413DFADED0092D43B /* SRRecorderCell.h */,
@@ -328,7 +321,6 @@
 				ABA169C31400A1150024D2E6 /* PTHotKeyCenter.m in Sources */,
 				ABA169C41400A1150024D2E6 /* PTKeyCodeTranslator.m in Sources */,
 				ABA169C51400A1150024D2E6 /* PTKeyCombo.m in Sources */,
-				ABA16A161400A6190024D2E6 /* SR_LeopardView.m in Sources */,
 				ABA16A171400A6190024D2E6 /* SRCommon.m in Sources */,
 				ABA16A181400A6190024D2E6 /* SRKeyCodeTransformer.m in Sources */,
 				ABA16A191400A6190024D2E6 /* SRRecorderCell.m in Sources */,

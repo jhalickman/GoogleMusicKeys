@@ -2,7 +2,7 @@
 //  SRCommon.m
 //  ShortcutRecorder
 //
-//  Copyright 2006-2007 Contributors. All rights reserved.
+//  Copyright 2006-2011 Contributors. All rights reserved.
 //
 //  License: BSD
 //
@@ -10,6 +10,7 @@
 //      David Dauer
 //      Jesper
 //      Jamie Kirkpatrick
+//      Andy Kim
 
 #import "SRCommon.h"
 #import "SRKeyCodeTransformer.h"
@@ -49,10 +50,10 @@ NSString * SRStringForKeyCode( NSInteger keyCode )
 NSString * SRStringForCarbonModifierFlags( NSUInteger flags )
 {
     NSString *modifierFlagsString = [NSString stringWithFormat:@"%@%@%@%@", 
-		( flags & controlKey ? [NSString stringWithFormat:@"%d", KeyboardControlGlyph] : @"" ),
-		( flags & optionKey ? [NSString stringWithFormat:@"%d", KeyboardOptionGlyph] : @"" ),
-		( flags & shiftKey ? [NSString stringWithFormat:@"%d", KeyboardShiftGlyph] : @"" ),
-		( flags & cmdKey ? [NSString stringWithFormat:@"%d", KeyboardCommandGlyph] : @"" )];
+		( flags & controlKey ? SRChar(KeyboardControlGlyph) : @"" ),
+		( flags & optionKey ? SRChar(KeyboardOptionGlyph) : @"" ),
+		( flags & shiftKey ? SRChar(KeyboardShiftGlyph) : @"" ),
+		( flags & cmdKey ? SRChar(KeyboardCommandGlyph) : @"" )];
 	return modifierFlagsString;
 }
 
@@ -72,10 +73,10 @@ NSString * SRStringForCarbonModifierFlagsAndKeyCode( NSUInteger flags, NSInteger
 NSString * SRStringForCocoaModifierFlags( NSUInteger flags )
 {
     NSString *modifierFlagsString = [NSString stringWithFormat:@"%@%@%@%@", 
-		( flags & NSControlKeyMask ? [NSString stringWithFormat:@"%d", KeyboardControlGlyph] : @"" ),
-		( flags & NSAlternateKeyMask ? [NSString stringWithFormat:@"%d", KeyboardOptionGlyph] : @"" ),
-		( flags & NSShiftKeyMask ? [NSString stringWithFormat:@"%d", KeyboardShiftGlyph] : @"" ),
-		( flags & NSCommandKeyMask ? [NSString stringWithFormat:@"%d", KeyboardCommandGlyph] : @"" )];
+		( flags & NSControlKeyMask ? SRChar(KeyboardControlGlyph) : @"" ),
+		( flags & NSAlternateKeyMask ? SRChar(KeyboardOptionGlyph) : @"" ),
+		( flags & NSShiftKeyMask ? SRChar(KeyboardShiftGlyph) : @"" ),
+		( flags & NSCommandKeyMask ? SRChar(KeyboardCommandGlyph) : @"" )];
 	
 	return modifierFlagsString;
 }
@@ -173,8 +174,6 @@ NSString *SRCharacterForKeyCodeAndCocoaFlags(NSInteger keyCode, NSUInteger cocoa
     CFLocaleRef locale = CFLocaleCopyCurrent();
 	[(id)CFMakeCollectable(locale) autorelease]; // Autorelease here so that it gets released no matter what
 	
-	CFMutableStringRef resultString;
-	
 	TISInputSourceRef tisSource = TISCopyCurrentKeyboardInputSource();
     if(!tisSource)
 		return FailWithNaiveString;
@@ -187,7 +186,6 @@ NSString *SRCharacterForKeyCodeAndCocoaFlags(NSInteger keyCode, NSUInteger cocoa
     if (!keyLayout)
 		return FailWithNaiveString;
 	
-    
 	EventModifiers modifiers = 0;
 	if (cocoaFlags & NSAlternateKeyMask)	modifiers |= optionKey;
 	if (cocoaFlags & NSShiftKeyMask)		modifiers |= shiftKey;
@@ -196,15 +194,20 @@ NSString *SRCharacterForKeyCodeAndCocoaFlags(NSInteger keyCode, NSUInteger cocoa
 	err = UCKeyTranslate( keyLayout, (UInt16)keyCode, kUCKeyActionDisplay, modifiers, LMGetKbdType(), kUCKeyTranslateNoDeadKeysBit, &deadKeyState, maxStringLength, &actualStringLength, unicodeString );
 	if(err != noErr)
 		return FailWithNaiveString;
+
 	CFStringRef temp = CFStringCreateWithCharacters(kCFAllocatorDefault, unicodeString, 1);
-	resultString = CFStringCreateMutableCopy(kCFAllocatorDefault, 0,temp);
-	if (temp)
-		CFRelease(temp);
-	CFStringCapitalize(resultString, locale);
-	
+	CFMutableStringRef mutableTemp = CFStringCreateMutableCopy(kCFAllocatorDefault, 0, temp);
+
+	CFStringCapitalize(mutableTemp, locale);
+
+	NSString *resultString = [NSString stringWithString:(NSString *)mutableTemp];
+
+	if (temp) CFRelease(temp);
+	if (mutableTemp) CFRelease(mutableTemp);
+
 	PUDNSLog(@"character: -%@-", (NSString *)resultString);
-	
-	return (NSString *)resultString;
+
+	return resultString;
 }
 
 #pragma mark Animation Easing
@@ -242,7 +245,7 @@ CGFloat SRAnimationEaseInOut(CGFloat t) {
 						defaultButton:[[error localizedRecoveryOptions] objectAtIndex:0U]
 					  alternateButton:nil
 						  otherButton:nil
-			informativeTextWithFormat:@"%@",(reason ? reason : @"")];
+			informativeTextWithFormat:(reason ? reason : @""), nil];
 }
 
 @end
