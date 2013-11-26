@@ -12,8 +12,8 @@
 #import "FireFox.h"
 
 #define PLAY_PAUSE_COMMAND @"SJBpost('playPause');"
-#define NEXT_COMMAND @"SJBpost('nextSong');"
-#define PREVIOUS_COMMAND @"SJBpost('prevSong');"
+#define NEXT_COMMAND @"document.querySelectorAll(\"[data-id='forward']\")[0].click()"
+#define PREVIOUS_COMMAND @"document.querySelectorAll(\"[data-id='rewind']\")[0].click()"
 #define SHUFFLE_COMMAND @"SJBpost('toggleShuffle');"
 
 
