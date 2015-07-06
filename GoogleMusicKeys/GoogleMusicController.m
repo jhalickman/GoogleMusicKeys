@@ -11,11 +11,10 @@
 #import "Safari.h"
 #import "FireFox.h"
 
-#define PLAY_PAUSE_COMMAND @"document.getElementsByClassName('flat-button')[2].click();"
-#define NEXT_COMMAND @"document.getElementsByClassName('flat-button')[3].click();"
-#define PREVIOUS_COMMAND @"document.getElementsByClassName('flat-button')[1].click();"
-#define SHUFFLE_COMMAND @"SJBpost('toggleShuffle');"
-
+#define PLAY_PAUSE_COMMAND @"document.querySelectorAll('[data-id=\"play-pause\"]')[0].click();"
+#define NEXT_COMMAND @"document.querySelectorAll('[data-id=\"forward\"]')[0].click();"
+#define PREVIOUS_COMMAND @"document.querySelectorAll('[data-id=\"rewind\"]')[0].click();"
+#define SHUFFLE_COMMAND @"document.querySelectorAll('[data-id=\"shuffle\"]')[0].click();"
 
 @implementation GoogleMusicController
 
