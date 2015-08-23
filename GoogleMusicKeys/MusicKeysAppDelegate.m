@@ -77,8 +77,8 @@ CGEventRef myCGEventCallback(CGEventTapProxy proxy, CGEventType type, CGEventRef
 			[self registerAction:@selector(next) forKey:@"NextKey"];
 			[self registerAction:@selector(playPause) forKey:@"PlayPauseKey"];
 			[self registerAction:@selector(shuffle) forKey:@"ShuffleKey"];
-            [self registerAction:@selector(toggleThumbsUp) forKey:@"ThumbsUpKey"];
-            [self registerAction:@selector(toggleThumbsDown) forKey:@"ThumbsDownKey"];
+            [self registerAction:@selector(thumbsUp) forKey:@"ThumbsUpKey"];
+            [self registerAction:@selector(thumbsDown) forKey:@"ThumbsDownKey"];
 			
 			hotKeyRegistered = YES;
 			[[NSUserDefaults standardUserDefaults] setBool:1 forKey:@"EnableGlobalKeys"];

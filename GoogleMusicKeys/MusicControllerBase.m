@@ -137,8 +137,8 @@
 	return nil;
 }
 
-- (void)toggleThumbsUp { }
+- (void)thumbsUp { }
 
-- (void)toggleThumbsDown { }
+- (void)thumbsDown { }
 	
 @end
