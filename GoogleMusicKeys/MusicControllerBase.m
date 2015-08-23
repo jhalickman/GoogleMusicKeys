@@ -136,5 +136,9 @@
 -(NSString *)getTabName {
 	return nil;
 }
+
+- (void)toggleThumbsUp { }
+
+- (void)toggleThumbsDown { }
 	
 @end

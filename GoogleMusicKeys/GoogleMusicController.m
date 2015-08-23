@@ -15,6 +15,8 @@
 #define NEXT_COMMAND @"document.querySelectorAll('[data-id=\"forward\"]')[0].click();"
 #define PREVIOUS_COMMAND @"document.querySelectorAll('[data-id=\"rewind\"]')[0].click();"
 #define SHUFFLE_COMMAND @"document.querySelectorAll('[data-id=\"shuffle\"]')[0].click();"
+#define TOGGLE_THUMBS_UP_COMMAND @"document.querySelectorAll('[icon=\"sj:thumb-up-outline\"]')[0].click();"
+#define TOGGLE_THUMBS_DOWN_COMMAND @"document.querySelectorAll('[icon=\"sj:thumb-down-outline\"]')[0].click();"
 
 @implementation GoogleMusicController
 
@@ -39,6 +41,12 @@
 	return @"Google Play Music";
 }
 
-    
+- (void)toggleThumbsUp {
+    [self tryChromeThenSafari:TOGGLE_THUMBS_UP_COMMAND];
+}
+
+- (void)toggleThumbsDown {
+    [self tryChromeThenSafari:TOGGLE_THUMBS_DOWN_COMMAND];
+}
 
 @end
