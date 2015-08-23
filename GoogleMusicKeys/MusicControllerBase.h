@@ -23,4 +23,6 @@ typedef void (^MusicControllerError)(NSString *error);
 -(void) show;
 -(void) tryChromeThenSafari:(NSString *)command;
 -(NSString *)getTabName;
+- (void)thumbsUp;
+- (void)thumbsDown;
 @end
